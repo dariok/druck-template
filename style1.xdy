@@ -1,0 +1,20 @@
+(markup-index :open  "\begin{theindex}\raggedright~n
+\providecommand*\lettergroupDefault[1]{}
+ \providecommand*\lettergroup[1]{%
+ \par\textbf{\large#1}\par
+   \nopagebreak
+  }"
+          :close "~n~n\end{theindex}~n"
+          :tree)
+
+(markup-indexentry :open "~n      \subIIIitem " :depth 3)
+
+(markup-locclass-list :open "\quad ")
+
+;;(define-location-class "pagenums" ("arabic-numbers") :min-range-length 1)
+;;(markup-range :class "arabic-numbers" :min-range-length 1)
+;;(markup-range :class "arabic-numbers" :close "f." :length 1 :ignore-end)
+;;(markup-range :class "arabic-numbers" :sep "--")
+(define-location-class "arabic-page-numbers" ("arabic-numbers") :min-range-length 1)
+(markup-range :sep " f." :length 1 :ignore-end)
+(markup-range :sep "--")

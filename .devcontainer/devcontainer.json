@@ -1,0 +1,44 @@
+{
+  "name": "project-dev",
+  "dockerComposeFile": ["docker-compose.yml"],
+  "service": "vscode",
+  "runServices": ["vscode"],
+  "shutdownAction": "stopCompose",
+  "workspaceFolder": "/workspace",
+  "postCreateCommand": "apt-get update && apt-get install -y fontconfig fonts-junicode fonts-freefont-otf && tlmgr update --self && tlmgr install xetex koma-script fontspec setspace multirow ragged2e polyglossia bidi zref reledmac xargs xstring bigfoot microtype changepage hanging xifthen ifmtarg enumitem hyphen-german hyphen-latin hyphen-greek hyphen-french && texhash",
+  "customizations": {
+    "vscode": {
+        "extensions": [
+            "james-yu.latex-workshop",
+            // Git
+            "eamodio.gitlens",
+            // Other helpers
+            "shardulm94.trailing-spaces",
+            "stkb.rewrap", // rewrap comments after n characters on one line
+            // Other
+            "vscode-icons-team.vscode-icons",
+            "brunnerh.insert-unicode", // Unicode character input
+            "medo64.code-point" // show character code point
+        ],
+        "settings": {
+            // General settings
+            "files.eol": "\n",
+            // Latex settings
+            "latex-workshop.linting.chktex.enabled": true,
+            //"latex-workshop.latex.clean.subfolder.enabled": true,
+            //"latex-workshop.latex.autoClean.run": "onBuilt",
+            //"editor.formatOnSave": true,
+            "files.associations": {
+                "*.tex": "latex"
+            },
+            "latex-workshop.latexindent.args": [
+                "-c",
+                "%DIR%/",
+                "%TMPFILE%",
+                "-y=\"defaultIndent: '%INDENT%',onlyOneBackUp: 1\""
+            ],
+            "dev.containers.copyGitConfig": true
+        }
+    }
+  }
+}

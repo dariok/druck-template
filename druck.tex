@@ -1,0 +1,759 @@
+\documentclass[open=any, index=totoc, paper=160mm:234mm, chapterprefix=true,
+	fontsize=10pt, DIV=10, BCOR=12mm]{scrbook}
+\KOMAoption{headings}{small,optiontohead}
+
+\usepackage{fontspec}
+\setmainfont[Ligatures=TeX, Numbers=OldStyle,
+	UprightFeatures={
+		SmallCapsFont={Junicode},
+		SmallCapsFeatures={Letters=SmallCaps,LetterSpace=6}
+	},
+	BoldFeatures={
+		LetterSpace=3
+	},
+	ItalicFeatures={
+		LetterSpace=1
+	}]{Junicode}
+
+%%%%%%
+% Einstellungen zum Satzspiegel
+%%%%%%
+% Seitengeometrie mit und ohne Marginalien
+\usepackage[xetex]{geometry}
+\geometry{inner=25mm, outer=22.5mm, top=22.5mm, bottom=30mm, headsep=2.5mm}%, showframe}
+\usepackage{multicol}
+
+% Einrückung und Abstand von Absätzen
+\setlength{\parindent}{5mm}
+\setlength{\parskip}{0pt}
+
+% Zeilenabstand leicht erhöhen
+\usepackage{setspace}
+\setstretch{1.06}
+
+% Kopfzeile umdefinieren und Fußzeile ausschalten
+\usepackage{scrlayer-scrpage}
+\pagestyle{scrheadings}
+\clearpairofpagestyles
+\cehead{\textnormal{\footnotesize\leftmark}}
+\lehead{\footnotesize\pagemark}
+\cohead{\textnormal{\footnotesize\leftmark}}
+\rohead{\footnotesize\pagemark}
+
+% Fußnoten dürfen eigentlich immer umbrechen, weitere penalties auf 0, wird manuell erledigt
+\interfootnotelinepenalty=0
+\clubpenalty=0
+\widowpenalty=0
+\displaywidowpenalty=0
+
+\usepackage{array}
+\usepackage{longtable}
+\newcommand{\dohang}{\hangindent2em\hangafter1 }
+% \usepackage{tabu}
+\usepackage{multirow}
+\newcommand{\tabsep}{\raisebox{14pt}{~}}
+\newcommand{\tablinesep}{\raisebox{-4pt}{ }}
+
+\usepackage{graphicx}
+
+%%%%%%
+% Sprachen
+%%%%%%
+\usepackage{ragged2e}
+\usepackage{polyglossia}
+\setdefaultlanguage{german}
+% variant=ecclesiastic nutzt frz. Spationierung, die bei Chevrons Abstände wegfallen läßt!
+\setotherlanguage[variant=medieval]{latin}
+
+\setotherlanguage[variant=ancient]{greek}
+\newfontfamily\greekfont{FreeSerif}
+
+\setotherlanguage{hebrew}
+\newfontfamily\hebrewfont{FreeSerif}
+
+\setotherlanguage{french}
+% \newfontfamily\hebrewfont{SBLHebrew}
+% % \newfontfamily\hebrewfont{EzraSIL}
+
+%%%%%
+% Umdefinitionen für chapter: fortlaufender Text, kapitelähnlicher Eintrag im Inhaltsverzeichnis, kleine Überschrift
+%%%%%
+% Kapitelüberschriften fangen oben an
+\RedeclareSectionCommand[%
+  afterskip=0.5\baselineskip plus .15\baselineskip minus .15\baselineskip,
+  beforeskip=0pt,
+  innerskip=0pt,
+  %tocnumwidth=4em,
+	afterindent=false,
+	font=\normalfont\Large
+]{chapter}
+
+% Kapitelnummer mit »Nr.« in eine eigene Zeile, Brief-ID darüber rechtsbündig
+\renewcommand*{\raggeddictumtext}{\raggedleft}
+\renewcommand*{\chapapp}{Nr.}%~}
+\renewcommand*{\chaptermarkformat}{Nr.~\thechapter~~}
+\renewcommand*{\raggedsection}{\centering}
+
+% \addtokomafont{chapter}{\normalfont}
+% \addtokomafont{chapterentrypagenumber}{\normalfont}
+\DeclareTOCStyleEntry[
+  entryformat=\normalfont\normalsize,%
+  beforeskip=5pt plus 2pt,%
+  numwidth=2.2em,%
+  pagenumberformat=\normalfont\normalsize,%
+  raggedentrytext=on,
+  rightindent=3em,%
+  pagenumberwidth=3em%
+]{tocline}{chapter}
+
+\RedeclareSectionCommand[%
+  font=\normalfont\bfseries,%
+	beforeskip=1\baselineskip plus .15\baselineskip minus .1\baselineskip,%
+  afterskip=0.4\baselineskip plus .15\baselineskip minus .1\baselineskip,%
+	afterindent=false
+]{section}
+\DeclareTOCStyleEntry[%
+  entryformat=\normalfont\itshape,%
+  indent=2.2em,
+  prepagenumber=~~,%
+  onstartentry=–\hspace{0.5em plus 0.2em minus 0.1em},%
+  onendentry=\hspace{0.5em plus 0.2em minus 0.1em},
+  afterpar=\vspace{0.05\baselineskip},
+  rightindent=3em
+]{toctext}{section}
+
+\RedeclareSectionCommand[%
+  font=\normalfont\bfseries,%
+	beforeskip=2.5ex plus 1.5ex minus 2ex,
+	afterskip=0ex plus 3ex minus 0ex
+]{paragraph}
+
+\setcounter{tocdepth}{\sectiontocdepth}
+
+%%%%%
+% Einstellungen für Reledmac
+%%%%%
+\usepackage[nocritical,noend,series={C,A,B}]{reledmac}
+% Zeilennummern
+\lineation{page}
+\setlength{\linenumsep}{2.5mm}
+\linenummargin{inner}
+
+% Einstellungen für alle Fußnoten: Schriftgröße
+\notefontsizeX[A]{\small}
+\notefontsizeX[B]{\small}
+\notefontsizeX[C]{\small}
+
+% Einstellungen für alle Fußnoten: FN-Linie
+\prenotesX{7.5pt plus 10pt minus .5pt}
+% \prenotesX{3pt plus 16pt minus 3pt}
+% beforenotesX: LaTeX zieht 3pt ab
+\beforenotesX[A]{4.5pt plus 1pt minus .5pt}
+\beforenotesX[B]{4.5pt plus 1pt minus .5pt}
+\beforenotesX[C]{4.5pt plus 1pt minus .5pt}
+% \beforenotesX[A]{6pt}
+% \beforenotesX[B]{6pt}
+% \beforenotesX[C]{6pt}
+
+% afterrule: LaTeX addiert 2.6pt
+\afterruleX[A]{0.4pt}%1.75pt}% plus 1pt minus 0pt}
+\afterruleX[B]{0.4pt}%1.75pt}% plus 1pt minus 0pt}
+\afterruleX[C]{0.4pt}%1.75pt}% plus 1pt minus 0pt}
+
+% kritische Fußnoten
+\arrangementX[A]{paragraph}
+\counterwithin*{footnoteA}{chapter}
+
+\usepackage{intcalc}
+\usepackage{refcount}
+\newcounter{myPFN}
+\newcounter{myAFN}
+\newcounter{myBFN}
+\newcounter{myCFN}
+\newcommand{\aalph}[1]{%
+	\IfInteger{#1}{%
+		\setcounter{myPFN}{#1}%
+	}{%
+		\setcounter{myPFN}{\getrefnumber{#1}}%
+	}%
+	\setcounter{myAFN}{\intcalcDiv{\intcalcAdd{\themyPFN}{-27}}{676}}%
+	\ifnum\themyPFN < 703\setcounter{myBFN}{\intcalcMod{\intcalcDiv{\intcalcAdd{\themyPFN}{-1}}{26}}{27}}%
+	\else\setcounter{myBFN}{\intcalcAdd{\intcalcMod{\intcalcDiv{\intcalcAdd{\themyPFN}{-27}}{26}}{26}}{1}}\fi%
+	\setcounter{myCFN}{\intcalcAdd{\intcalcMod{\intcalcAdd{\themyPFN}{-1}}{26}}{1}}%
+\alph{myAFN}\alph{myBFN}\alph{myCFN}%
+}
+
+\renewcommand*{\bodyfootmarkA}{%
+	% \textsuperscript{\aalph{\thefootnoteA}}%
+	\bodyFootmarkA{\thefootnoteA}%
+}
+\newcommand{\bodyFootmarkA}[1]{%
+	\textsuperscript{\aalph{#1}}%
+}
+\newcommand{\habMarginFootmarkA}[1]{%
+	{\fontsize{7}{7}\selectfont\raisebox{3pt}[0pt]{\aalph{#1}}}%
+}
+% Fußnotenmarke in der Fußnote ausschalten, wird für a-a anderweitig gesetzt.
+\makeatletter
+	\renewcommand*{\footfootmarkA}{}%
+\makeatother
+% Command \footnotetextA erzeugt den Text der Fußnote und die Markierung: wenn optionaler Param = 1, dann a-a
+\makeatletter
+	\newcommand{\ffmarkA}[2]{%
+		\ifnum#1=1\aalph{#2}\kern1pt–\kern1pt\aalph{#2})%
+		\else\aalph{#2})\fi%
+	}
+	\newcommand{\footnotetextA}[2][0]{%
+		\footnoteA{%
+			\ffmarkA{#1}{\@nameuse{@thefnmarkA}}~#2%
+		}%
+	}%
+	\newcommand{\cfootnotetextA}[3][0]{%
+		\footnoteA{%
+			#2\hspace{10pt plus 3pt minus 3pt}%
+			\ffmarkA{#1}{\@nameuse{@thefnmarkA}}~#3%
+		}%
+	}
+	\newcommand{\sfootnotetextA}[1]{%
+	  \addtocounter{footnoteA}{-1}%
+	  \begin{marginFoot}%
+	    \footnoteA{#1}%
+	  \end{marginFoot}%
+  }
+\makeatother
+
+%%% Sachanmerkungen
+\hangindentX[B]{5mm}%{1.7em}
+\counterwithin*{footnoteB}{chapter}
+
+\makeatletter
+	\renewcommand*{\footfootmarkB}{%
+		\makebox[5mm][l]{\@nameuse{@thefnmarkB}\ }%
+	}
+\makeatother
+
+%%% Verweise für Anmerkungen
+\newcommand{\bodyFootmarkB}[1]{%
+	\textsuperscript{\normalfont{\ref{#1}}}%
+}
+
+%%%%%
+% Marginalien
+%%%%%
+% \arrangementX[C]{twocol}
+% \hsizetwocolX[C]{0.48\hsize}
+\counterwithin*{footnoteC}{chapter}
+\hangindentX[C]{5mm}
+\makeatletter
+% https://tex.stackexchange.com/questions/4058/greek-numbering
+  \newcommand{\ggreek}[1]{%
+    \setcounter{myPFN}{#1}%
+    \setcounter{myAFN}{\intcalcMod{\intcalcDiv{\intcalcAdd{\themyPFN}{-1}}{24}}{25}}%
+    \setcounter{myBFN}{\intcalcAdd{\intcalcMod{\intcalcAdd{\themyPFN}{-1}}{24}}{1}}%
+    \textgreek{\@greeknum{\themyAFN}\@greeknum{\themyBFN}}%
+  }
+  \newcommand*{\@greeknum}[1]{%
+    \ifcase#1\or α\or β\or γ\or δ\or ε\or ζ\or η\or ϑ\or ι\or κ\or λ\or μ\or ν%
+    \or ξ\or ο\or π\or ρ\or σ\or τ\or υ\or φ\or χ\or ψ\or ω%
+    \else\@ctrerr\fi
+  }
+\renewcommand*{\bodyfootmarkC}{\textsuperscript{\ggreek{\@nameuse{@thefnmarkC}}}}%%
+\renewcommand*{\footfootmarkC}{%
+  \makebox[5mm][l]{\ggreek{\@nameuse{@thefnmarkC}}}%
+}
+\makeatother
+\newcommand{\marginalie}[1]{%
+	\footnoteC{#1}%
+}
+\renewcommand*{\multfootsep}{\textsuperscript{ }}%
+\newenvironment{marginFoot}{%
+	\renewcommand*{\bodyfootmarkB}{}%
+	\renewcommand*{\bodyfootmarkA}{}%
+	\renewcommand*{\multfootsep}{}%
+}{}
+\makeatletter
+\newcommand{\marginFootMark}[1]{%
+  {\fontsize{7}{7}\selectfont\raisebox{3pt}[0pt]{%
+    % nochmal umgeschrieben, testet noch mehr; 2016-12-20 DK
+    % Prüfen, ob es ein Befehl ist
+    \@ifundefined{#1}%
+      % Befehl ist nicht definiert
+      {% ist es ein Label?
+        \@ifundefined{r@#1}%
+          % kein Label, also Text ausgeben. Kommt das vor?
+          {#1}%
+          % wenn Label, dann auflösen
+          {\ref{#1}}%
+      }%
+      % Befehl ist definiert (vmtl. \aalph), also ausführen
+      {#1}%%
+  }}%
+}%
+\makeatother
+
+%%%%%
+% Verweise
+%%%%%
+% Zitatbereiche
+% schaut nach vorne, um keine doppelten Punkte zu setzen; 01/2017 DK
+% ggf. Seitenzahl nicht ausgeben; 2017-03-03 DK
+\ExplSyntaxOn
+\newcounter{refStartLine}%
+%\newcounter{refEndLine}%
+	\newcommand{\lineref}[2][0]{%
+		\setcounter{refStartLine}{\xlineref{#2}}%
+		%\setcounter{refEndLine}{\xlineref{#2e}}%
+		
+		\ifnum#1=1%% Parameter = 1 gesetzt, also Seite unterdrücken
+			\relax%
+		\else%
+			\ifthenelse{\xpageref{#2}=\thepage}{%
+				\relax%
+			}{%
+				S. \xpageref{#2},\ %
+			}
+		\fi%
+		Z. %
+		\ifthenelse{\xpageref{#2}=\xpageref{#2e}}{%
+			\ifthenelse{\xlineref{#2}=\xlineref{#2e}}%
+			{\edlineref{#2}}%
+			{%
+				\ifthenelse{\intcalcAdd{\xlineref{#2}}{1}=\xlineref{#2e}}%
+					% wenn ein Punkt folgt, keinen ausgeben. 2017-01-28 DK %
+					{%
+						\therefStartLine f%
+						\peek_charcode:NTF.{\relax}{.}%
+					}{%
+						\therefStartLine–\edlineref{#2e}%
+					}%
+			}%
+		}{%
+			\therefStartLine–\hspace{0.75pt}S. \xpageref{#2e},\ Z. \edlineref{#2e}%
+		}%
+	}%
+\ExplSyntaxOff
+
+\makeatletter
+	% \newcounter{mySelfRef}%
+	% \newcounter{myChap}%
+	% \setcounter{mySelfRef}{1}
+	\newcommand{\noteref}[2][0]{%
+	% prüfen, ob das label überhaupt schon definiert ist, sonst gibt es Probleme; 2016-12-14 DK
+	% ggf. die Seite nicht mit ausgeben. 2017-02-23 DK %
+	\@ifundefined{r@#2}{000}{%
+			% % \label{e\themyChap noteref\themySelfRef}%
+			% \ifthenelse{\equal{\pageref{#2}}{\thepage}}
+			% %\Ifstr{\pageref{#2}}{\pageref{e\themyChap noteref\themySelfRef}}%
+			% 	% Fußnote auf der gleichen Seite: Seitenzahl nicht ausgeben
+			% 	{\ifnum#1=2%
+			% 		{\ref{#2}}%
+			% 		\else{%
+			% 			Anm.~\ref{#2}%
+			% 		}%
+			% 	\fi}%
+			% 	% verschiedene Seitenzahlen
+			% 	{\ifnum#1=1% Paramter = 1 gesetzt, also Seite unterdrücken
+					{Anm.~\ref{#2}}%
+			% 	\else\ifnum#1=2%
+			% 		{\ref{#2}}%
+			% 	\else%
+			% 		{S. \pageref{#2} Anm.~\ref{#2}}%
+			% 	\fi\fi}%
+			% %\stepcounter{mySelfRef}%
+		}%
+	}
+	
+\newcommand{\habCritNoteRef}[2][0]{%
+	\ifnum#1=1%% Paramter = 1 gesetzt, also Seite unterdrücken
+		\relax%
+	\else%
+		S.~\pageref{#2},\ %
+	\fi%
+	Anm.~\aalph{#2}%
+}
+\makeatother
+
+%%%%%
+% Indices vorbereiten
+%%%%%
+% \usepackage[split]{splitidx}
+% \makeindex
+% \newindex[Personen]{per}
+% \newindex[Orte]{pla}
+% \newindex[Sachen]{thi}
+% \AtWriteToIndex{thi}{\let\thepage\thechapter}
+
+%%%%%
+% Weitere Definitionen
+%%%%%
+\usepackage[protrusion=true]{microtype}
+
+% Seite ausgeben.
+\newcommand{\page}[1]{\mbox{|\hspace{0.5ex}\textit{#1}\hspace{0.5ex}|}}
+
+% habCloser
+\makeatletter
+	\newlength{\@habWidth}
+	\setlength{\@habWidth}{0pt}
+	\newlength{\@habWidth@temp}
+	\newcommand{\habCloser}[3]{%
+		\@for\next:=#3\do{%
+			\settowidth{\@habWidth@temp}{\next}%
+			\ifdim\@habWidth<\@habWidth@temp%
+				\setlength{\@habWidth}{\@habWidth@temp}%
+			\fi%
+		}%
+		\@tempswafalse
+		\@for\next:=#3\do{%
+			\if@tempswa\\\else\@tempswatrue\fi%
+			\noindent\makebox[\textwidth][#1]{\makebox[\@habWidth][#2]{\next}}%
+		}%
+	}
+\makeatother
+
+\usepackage{changepage}
+
+% Überschriften
+\newcounter{subHeadings}
+\counterwithin*{subHeadings}{chapter}
+\newcommand{\head}[2][~]{%
+	\ifnum\thesubHeadings>0%
+		\pagebreak[1]\vspace{1\baselineskip plus 0.25\baselineskip minus 0.25\baselineskip}%
+	\fi%
+	{\centering%
+		\ifnumbering\pstart\else\par\fi%
+			\noindent%
+			\Ifstr{#1}{~}{\relax}{\page{#1}\ }%
+			#2%
+		\ifnumbering\pend\else\par\fi%
+	}
+	\nopagebreak[4]\vspace{0.5\baselineskip plus 0.1\baselineskip}\nopagebreak[4]%
+	\addtocounter{subHeadings}{1}%
+}
+
+% Bearbeiter in der Introduction %
+\newcommand{\bearb}[1]{%
+  %\makebox[\textwidth]{\small{#1}}%
+  \vspace{0.5\baselineskip}{\footnotesize Bearbeitet von #1}\vspace{0.25\baselineskip plus 0.25\baselineskip}%
+}
+
+% items
+\newlength{\habItemLen}
+\newcommand{\flexitem}[3][7mm]{%
+	\settowidth{\habItemLen}{#2~}%
+	% neu 2017-02-23 DK
+	\ifnumbering%
+		\pstart%
+	\else%
+		\par%
+	\fi%
+	\vspace{0.25\baselineskip}\hangindent=#1mm\hangafter=1\noindent%
+	\ifdim\habItemLen < #1mm%
+		\makebox[#1mm][l]{#2}#3%
+	\else%
+		#2 #3%
+	\fi%
+	% neu 2017-02-23 DK
+	\ifnumbering\pend\fi%
+}
+
+\usepackage{hanging}
+\newcommand{\frontinfo}[2]{%
+	\hangindent=5mm\hangafter=1%
+	\noindent\textit{#1:}\\#2\par%
+}
+
+\usepackage{xifthen}
+\usepackage{expl3}
+\ExplSyntaxOn
+  \newcounter{myStartpage}%
+  \newcounter{myEndpage}%
+  \NewExpandableDocumentCommand{\romantoarabic}{m}
+  {
+    \int_from_roman:f { #1 }
+  }
+  \cs_generate_variant:Nn \int_from_roman:n { f }
+  \newcommand{\habPageref}[1]{%
+    \IfInteger{\getpagerefnumber{#1}}{%
+      % arabische Zahlen: direkt verarbeiten
+      \setcounter{myStartpage}{\getpagerefnumber{#1}}%
+      \setcounter{myEndpage}{\getpagerefnumber{#1e}}%
+    }{%
+      % römische Zählung
+      \setcounter{myStartpage}{\romantoarabic{\getpagerefnumber{#1}}}%
+      \setcounter{myEndpage}{\romantoarabic{\getpagerefnumber{#1e}}}%
+    }%
+		% Ansatz mit \ifcase?
+    % \ifnum\value{myStartpage}=\value{myEndpage}%
+    %   S.~\getpagerefnumber{#1}%
+		% \else\ifnum\value{myStartpage}+1=\value{myEndpage}%
+    %   S.~\getpagerefnumber{#1}\kern0.2ex f\peek_meaning:NTF . {\relax}{.}%
+    % \else%
+    %   S.~\getpagerefnumber{#1}–\getpagerefnumber{#1e}%
+    % \fi\fi%
+    \ifthenelse{\value{myStartpage}<\value{myEndpage}}{%
+      \ifthenelse{\intcalcAdd{\value{myStartpage}}{1}=\value{myEndpage}}{%
+        S.~\getpagerefnumber{#1}\kern0.2ex f\peek_meaning:NTF . {\relax}{.}%
+      }{%
+        S.~\getpagerefnumber{#1}–\getpagerefnumber{#1e}%
+      }%
+    }{%
+      S.~\getpagerefnumber{#1}%
+    }%
+  }%
+\ExplSyntaxOff
+
+\usepackage{xspace}
+\usepackage{enumitem}
+
+\newcommand{\leditem}[3]{%
+	\par\vspace{.05\baselineskip plus .05\baselineskip minus .05\baselineskip}%
+	\hangindent=#1\hangafter=1%
+	\noindent\makebox[#1][l]{#2}#3%
+}
+
+\input{kerning}
+
+\begin{hyphenrules}{latin}
+	\hyphenation{cae-le-stis}
+	\hyphenation{cir-cum-iacen-ti-bus}
+	\hyphenation{co-ales-ca-mus}
+	\hyphenation{cres-cunt}
+	\hyphenation{dis-pu-ta-tio dis-pu-ta-tio-nis dis-pu-ta-tio-ne dis-pu-ta-tae}
+	\hyphenation{dis-ci-pli-na dis-ci-pli-nae dis-ci-pli-nam}
+	\hyphenation{eius-mo-di}
+	\hyphenation{mo-nue-runt}
+	\hyphenation{neg-li-gas}
+	% \hyphenation{no-stri}
+	\hyphenation{Phil-ippum Phil-ippo}
+	\hyphenation{Prae-ter-ea}
+	% \hyphenation{ve-stri ve-strae}
+	\hyphenation{vo-lue-ro}
+	% dt. Wörter, die oft in FN vorkommen; da wegen der XeTeXinterchartoks nicht mit textGerman gearbeitet werden kann,
+	% müssen diese Fälle explizit auch für lat. Fußnoten gesetzt werden.
+	\hyphenation{nicht doch auch}
+	\hyphenation{Kon-kor-dien-buch Kon-kor-dien-for-mel}
+\end{hyphenrules}
+
+\begin{hyphenrules}{german}
+	\hyphenation{Epi-sto-la-rum}
+	\hyphenation{her-nacher}
+	\hyphenation{Me-lan-chthon}
+	\hyphenation{vor-gli-chen}
+\end{hyphenrules}
+
+% \includeonly{includes/6.tex}
+% \includeonly{includes/51.tex,includes/58.tex}%,includes/3.tex,includes/4.tex,includes/5.tex}
+
+\begin{document}
+\frontmatter
+%
+\frontmatter
+\thispagestyle{empty}
+%Schmutztitelblatt
+\vspace*{\fill}
+\begin{center}Schmutztitel\end{center}
+%\begin{center}Theologenbriefwechsel im Südwesten des Reichs in der Frühen Neuzeit\\%
+%	\vspace{\baselineskip}Kurpfalz Ⅰ (1556–1583)\end{center}\vfill
+%Vortitel
+\clearpage\thispagestyle{empty}
+\begin{center}{\LARGE Vortitel}\end{center}
+%	\begin{center}{\LARGE Quellen und Forschungen\\\vspace{0.25\baselineskip}zur Reformationsgeschichte}\\
+%	\vspace{1.5\baselineskip}Im Auf\kern.1pttrag des Vereins für Reformationsgeschichte\\
+%		\vspace{0.25\baselineskip}herausgegeben von Irene Dingel\\
+%		\vspace{1.25\baselineskip}Band 99\\
+%	\vspace{10\baselineskip}{\LARGE Theologenbriefwechsel im Südwesten des\\
+%		\vspace{0.25\baselineskip}Reichs in der Frühen Neuzeit (1550–1620)\\
+%		\vspace*{0.5\baselineskip}Kritische Auswahledition}\\
+%	\vspace{2\baselineskip}Im Auf\kern.1pttrag der\\
+%		\vspace{0.25\baselineskip}Heidelberger Akademie der Wissenschaften\\
+%		\vspace{0.25\baselineskip}herausgegeben von Christoph Strohm\\
+%	\vspace{2\baselineskip}Band 2\end{center}%
+%Haupttitel
+\clearpage\thispagestyle{empty}\begin{center}\vspace*{3\baselineskip}
+\textbf{\LARGE Haupttitel}
+%	\textbf{\LARGE Theologenbriefwechsel im Südwesten des\\
+%		\vspace{0.25\baselineskip}Reichs in der Frühen Neuzeit (1550–1620)\\
+%		\vspace{.25\baselineskip}Kritische Auswahledition\\
+%		\vspace{2\baselineskip}Band 2:\\\vspace{0.5\baselineskip}Kurpfalz Ⅰ (1556–1583)}\\
+%		\vspace{4\baselineskip}{\large Im Auf\kern.1pttrag der\\
+%		\vspace{0.25\baselineskip}Heidelberger Akademie der Wissenschaften\\
+%		\vspace{0.25\baselineskip}herausgegeben von Christoph Strohm\\
+%	\vspace{2\baselineskip}Bearbeitet von Stefan Aderhold, Sabine Arend, Marcel Böhme,\\
+%	\vspace{0.25\baselineskip} Stephen E. Buckwalter, Daniel Degen, Gerald Dörner,\\
+%	\vspace{.5\baselineskip} Max Graff, Judith Steiniger und Thomas Wilhelmi}
+%	\par\vfill
+%	Gütersloher Verlagshaus\\2022
+\end{center}
+%Titelverso
+\clearpage\thispagestyle{empty}
+\noindent Titelverso
+%  \noindent Dieser Band wurde im Rahmen der gemeinsamen Forschungsförderung von Bund und Ländern im Akademienprogramm 
+%	  mit Mitteln des Bundesministeriums für Bildung und Forschung und des Ministeriums für Wissenschaft, Forschung und 
+%		Kunst des Landes Baden-Württemberg erarbeitet.
+%	\par\noindent \includegraphics[width=0.48\textwidth]{includes/au2.png}\hspace{0.02\textwidth}
+%		\includegraphics[width=0.48\textwidth]{includes/hd.png}
+\vspace{25\baselineskip}
+%\flexitem[8]{Satz:}{Baumgarten, Kampkaspar, Steyer GbR}
+%\flexitem[8]{}{Richterstr. 19}
+%\flexitem[8]{}{38106 Braunschweig}
+%\flexitem[8]{}{https://baukast.digital}
+\vfill
+\noindent ISBN 978-3-123-45678-9
+%\noindent ISBN 978-3-579-05982-2
+%
+\setcounter{page}{4}
+\tableofcontents
+
+\frontmatter
+%\setcounter{page}{13}
+%\include{includes/Vorwort.tex}
+%\include{includes/Konkordanzliste.tex}
+%\include{includes/Abkürzungsverzeichnis.tex}
+%\include{includes/Literaturverzeichnis.tex}
+%\include{includes/Verzeichnis.tex}
+%\include{includes/Editorische.tex}
+\cleardoublepage
+%\include{includes/Einleitung.tex}
+
+
+\mainmatter
+\part*{Edition}\cleardoublepage
+% \include{includes/1}
+% \include{includes/2}
+% \include{includes/3}
+% \include{includes/4}
+% \include{includes/5}
+% \include{includes/6}
+% \include{includes/7}
+% \include{includes/8}
+% \include{includes/9}
+% \include{includes/10}
+% \include{includes/11}
+% \include{includes/12}
+% \include{includes/13}
+% \include{includes/14}
+% \include{includes/15}
+% \include{includes/16}
+% \include{includes/17}
+% \include{includes/18}
+% \include{includes/19}
+% \include{includes/20}
+% \include{includes/21}
+% \include{includes/22}
+% \include{includes/23}
+% \include{includes/24}
+% \include{includes/25}
+% \include{includes/26}
+% \include{includes/27}
+% \include{includes/28}
+% \include{includes/29}
+% \include{includes/30}
+% \include{includes/31}
+% \include{includes/32}
+% \include{includes/33}
+% \include{includes/34}
+% \include{includes/35}
+% \include{includes/36}
+% \include{includes/37}
+% \include{includes/38}
+% \include{includes/39}
+% \include{includes/40}
+% \include{includes/41}
+% \include{includes/42}
+% \include{includes/43}
+% \include{includes/44}
+% \include{includes/45}
+% \include{includes/46}
+% \include{includes/47}
+% \include{includes/48}
+% \include{includes/49}
+% \include{includes/50}
+% \include{includes/51}
+% \include{includes/52}
+% \include{includes/53}
+% \include{includes/54}
+% \include{includes/55}
+% \include{includes/56}
+% \include{includes/57}
+% \include{includes/58}
+% \include{includes/59}
+% \include{includes/60}
+% \include{includes/61}
+% \include{includes/62}
+% \include{includes/63}
+% \include{includes/64}
+% \include{includes/65}
+% \include{includes/66}
+% \include{includes/67}
+% \include{includes/68}
+% \include{includes/69}
+% \include{includes/70}
+% \include{includes/71}
+% \include{includes/72}
+% \include{includes/73}
+% \include{includes/74}
+% \include{includes/75}
+% \include{includes/76}
+% \include{includes/77}
+% \include{includes/78}
+% \include{includes/79}
+% \include{includes/80}
+% \include{includes/81}
+% \include{includes/82}
+% \include{includes/83}
+% \include{includes/84}
+% \include{includes/85}
+% \include{includes/86}
+% \include{includes/87}
+% \include{includes/88}
+% \include{includes/89}
+% \include{includes/90}
+% \include{includes/91}
+% \include{includes/92}
+% \include{includes/93}
+% \include{includes/94}
+% \include{includes/95}
+% \include{includes/96}
+% \include{includes/97}
+% \include{includes/98}
+% \include{includes/99}
+% \include{includes/100}
+% \include{includes/101}
+% \include{includes/102}
+% \include{includes/103}
+% \include{includes/104}
+% \include{includes/105}
+% \include{includes/106}
+% \include{includes/107}
+% \include{includes/108}
+% \include{includes/109}
+% \include{includes/110}
+% \include{includes/111}
+% \include{includes/112}
+% \include{includes/113}
+% \include{includes/114}
+% \include{includes/115}
+% \include{includes/116}
+% \include{includes/117}
+% \include{includes/118}
+% \include{includes/119}
+% \include{includes/120}
+% \include{includes/121}
+% \include{includes/122}
+% \include{includes/123}
+% \include{includes/124}
+% \include{includes/125}
+% \include{includes/126}
+% \include{includes/127}
+% \include{includes/128}
+
+\backmatter
+\part*{Verzeichnisse}
+% \include{includes/01 Bibelstellenregister.tex}
+% \include{includes/02 Zitatenregister.tex}
+% \include{includes/03 Personenregister.tex}
+% \include{includes/04 Ortsregister.tex}
+% \include{includes/05 Sachregister.tex}
+% \printindex*
+\end{document}

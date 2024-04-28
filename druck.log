@@ -1,0 +1,1128 @@
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/TeX Live for SUSE Linux) (preloaded format=xelatex 2024.3.31)  29 APR 2024 00:12
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**druck
+(./druck.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+(/usr/share/texmf/tex/latex/koma-script/scrbook.cls
+Document Class: scrbook 2023/07/07 v3.41 KOMA-Script document class (book)
+(/usr/share/texmf/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2023/07/07 v3.41 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
+ (/usr/share/texmf/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2023/07/07 v3.41 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
+ (/usr/share/texmf/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2023/07/07 v3.41 KOMA-Script package (file load hooks)
+ (/usr/share/texmf/tex/latex/koma-script/scrlfile-hook.sty
+Package: scrlfile-hook 2023/07/07 v3.41 KOMA-Script package (using LaTeX hooks)
+ (/usr/share/texmf/tex/latex/koma-script/scrlogo.sty
+Package: scrlogo 2023/07/07 v3.41 KOMA-Script package (logo)
+))) (/usr/share/texmf/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+Applying: [2021/05/01] Usage of raw or classic option list on input line 252.
+Already applied: [0000/00/00] Usage of raw or classic option list on input line 368.
+)) (/usr/share/texmf/tex/latex/koma-script/tocbasic.sty
+Package: tocbasic 2023/07/07 v3.41 KOMA-Script package (handling toc-files)
+\scr@dte@tocline@numberwidth=\skip48
+\scr@dte@tocline@numbox=\box51
+)
+Package tocbasic Info: omitting babel extension for `toc'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `toc' on input line 135.
+Class scrbook Info: File `scrsize10pt.clo' used to setup font sizes on input line 2691.
+ (/usr/share/texmf/tex/latex/koma-script/scrsize10pt.clo
+File: scrsize10pt.clo 2023/07/07 v3.41 KOMA-Script font size class option (10pt)
+) (/usr/share/texmf/tex/latex/koma-script/typearea.sty
+Package: typearea 2023/07/07 v3.41 KOMA-Script package (type area)
+\ta@bcor=\skip49
+\ta@div=\count184
+\ta@hblk=\skip50
+\ta@vblk=\skip51
+\ta@temp=\skip52
+\footheight=\skip53
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 10
+(typearea)             BCOR = 34.1433pt
+(typearea)             \paperwidth      = 455.24408pt
+(typearea)              \textwidth      = 294.77055pt
+(typearea)              DIV departure   = 10%
+(typearea)              \evensidemargin = 11.95016pt
+(typearea)              \oddsidemargin  = 3.98338pt
+(typearea)             \paperheight     = 665.79448pt
+(typearea)              \textheight     = 478.0pt
+(typearea)              \topmargin      = -38.69055pt
+(typearea)              \headheight     = 15.0pt
+(typearea)              \headsep        = 18.0pt
+(typearea)              \topskip        = 10.0pt
+(typearea)              \footskip       = 42.0pt
+(typearea)              \baselineskip   = 12.0pt
+(typearea)              on input line 1799.
+)
+\c@part=\count185
+\c@chapter=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\scr@dte@chapter@maxnumwidth=\skip54
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\chapter on input line 5990.
+\scr@dte@section@maxnumwidth=\skip55
+Class scrbook Info: using compatibility default `runin=bysign'
+(scrbook)           for `\section on input line 6001.
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\section on input line 6001.
+\scr@dte@part@maxnumwidth=\skip56
+Class scrbook Info: using compatibility default `afterindent=true'
+(scrbook)           for `\part on input line 6010.
+\scr@dte@subsection@maxnumwidth=\skip57
+Class scrbook Info: using compatibility default `runin=bysign'
+(scrbook)           for `\subsection on input line 6020.
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\subsection on input line 6020.
+\scr@dte@subsubsection@maxnumwidth=\skip58
+Class scrbook Info: using compatibility default `runin=bysign'
+(scrbook)           for `\subsubsection on input line 6030.
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\subsubsection on input line 6030.
+\scr@dte@paragraph@maxnumwidth=\skip59
+Class scrbook Info: using compatibility default `runin=bysign'
+(scrbook)           for `\paragraph on input line 6041.
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\paragraph on input line 6041.
+\scr@dte@subparagraph@maxnumwidth=\skip60
+Class scrbook Info: using compatibility default `runin=bysign'
+(scrbook)           for `\subparagraph on input line 6051.
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\subparagraph on input line 6051.
+\abovecaptionskip=\skip61
+\belowcaptionskip=\skip62
+\c@pti@nb@sid@b@x=\box52
+Package tocbasic Info: omitting babel extension for `lof'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lof' on input line 7242.
+\scr@dte@figure@maxnumwidth=\skip63
+\c@figure=\count192
+Package tocbasic Info: omitting babel extension for `lot'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lot' on input line 7259.
+\scr@dte@table@maxnumwidth=\skip64
+\c@table=\count193
+Class scrbook Info: Redefining `\numberline' on input line 7430.
+\bibindent=\dimen140
+) (/usr/share/texmf/tex/latex/fontspec/fontspec.sty (/usr/share/texmf/tex/latex/l3packages/xparse/xparse.sty (/usr/share/texmf/tex/latex/l3kernel/expl3.sty
+Package: expl3 2024-02-20 L3 programming layer (loader) 
+ (/usr/share/texmf/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2024-02-20 L3 backend support: XeTeX
+\g__graphics_track_int=\count194
+\l__pdf_internal_box=\box53
+\g__pdf_backend_object_int=\count195
+\g__pdf_backend_annotation_int=\count196
+\g__pdf_backend_link_int=\count197
+))
+Package: xparse 2024-02-18 L3 Experimental document command parser
+)
+Package: fontspec 2024/02/13 v2.9a Font selection for XeLaTeX and LuaLaTeX
+ (/usr/share/texmf/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2024/02/13 v2.9a Font selection for XeLaTeX and LuaLaTeX
+\l__fontspec_script_int=\count198
+\l__fontspec_language_int=\count199
+\l__fontspec_strnum_int=\count266
+\l__fontspec_tmp_int=\count267
+\l__fontspec_tmpa_int=\count268
+\l__fontspec_tmpb_int=\count269
+\l__fontspec_tmpc_int=\count270
+\l__fontspec_em_int=\count271
+\l__fontspec_emdef_int=\count272
+\l__fontspec_strong_int=\count273
+\l__fontspec_strongdef_int=\count274
+\l__fontspec_tmpa_dim=\dimen141
+\l__fontspec_tmpb_dim=\dimen142
+\l__fontspec_tmpc_dim=\dimen143
+ (/usr/share/texmf/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+) (/usr/share/texmf/tex/latex/fontspec/fontspec.cfg)))
+
+Package fontspec Info: Font family 'Junicode(0)' created for font 'Junicode'
+(fontspec)             with options
+(fontspec)             [Ligatures=TeX,Ligatures=TeX,Numbers=OldStyle,UprightFeatures={
+(fontspec)             SmallCapsFont={Junicode},
+(fontspec)             SmallCapsFeatures={Letters=SmallCaps,LetterSpace=6}
+(fontspec)             },BoldFeatures={ LetterSpace=3 },ItalicFeatures={
+(fontspec)             LetterSpace=1 }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"Junicode/OT:script=latn;language=dflt;+onum;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->"Junicode/OT:script=latn;language=dflt;letterspace=6;+onum;+smcp;mapping=tex-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"Junicode/B/OT:script=latn;language=dflt;letterspace=3;+onum;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->"Junicode/B/OT:script=latn;language=dflt;letterspace=3;+onum;+smcp;mapping=tex-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"Junicode/I/OT:script=latn;language=dflt;letterspace=1;+onum;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"Junicode/I/OT:script=latn;language=dflt;letterspace=1;+onum;+smcp;mapping=tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"Junicode/BI/OT:script=latn;language=dflt;+onum;mapping=tex-text;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+
+ (/usr/share/texmf/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/usr/share/texmf/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (/usr/share/texmf/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count275
+\Gm@cntv=\count276
+\c@Gm@tempcnt=\count277
+\Gm@bindingoffset=\dimen144
+\Gm@wd@mp=\dimen145
+\Gm@odd@mp=\dimen146
+\Gm@even@mp=\dimen147
+\Gm@layoutwidth=\dimen148
+\Gm@layoutheight=\dimen149
+\Gm@layouthoffset=\dimen150
+\Gm@layoutvoffset=\dimen151
+\Gm@dimlist=\toks18
+) (/usr/share/texmf/tex/latex/tools/multicol.sty
+Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
+\c@tracingmulticols=\count278
+\mult@box=\box54
+\multicol@leftmargin=\dimen152
+\c@unbalance=\count279
+\c@collectmore=\count280
+\doublecol@number=\count281
+\multicoltolerance=\count282
+\multicolpretolerance=\count283
+\full@width=\dimen153
+\page@free=\dimen154
+\premulticols=\dimen155
+\postmulticols=\dimen156
+\multicolsep=\skip65
+\multicolbaselineskip=\skip66
+\partial@page=\box55
+\last@line=\box56
+\mc@boxedresult=\box57
+\maxbalancingoverflow=\dimen157
+\mult@rightbox=\box58
+\mult@grightbox=\box59
+\mult@firstbox=\box60
+\mult@gfirstbox=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\c@minrows=\count284
+\c@columnbadness=\count285
+\c@finalcolumnbadness=\count286
+\last@try=\dimen158
+\multicolovershoot=\dimen159
+\multicolundershoot=\dimen160
+\mult@nat@firstbox=\box98
+\colbreak@box=\box99
+\mc@col@check@num=\count287
+) (/usr/share/texmf/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+) (/usr/share/texmf/tex/latex/koma-script/scrlayer-scrpage.sty
+Package: scrlayer-scrpage 2023/07/07 v3.41 KOMA-Script package (end user interface for scrlayer)
+ (/usr/share/texmf/tex/latex/koma-script/scrlayer.sty
+Package: scrlayer 2023/07/07 v3.41 KOMA-Script package (defining layers and page styles)
+Package scrlayer Info: patching LaTeX kernel macro \pagestyle on input line 2183.
+)
+Package scrlayer-scrpage Info: Makeing stand-alone element `pagehead' from
+(scrlayer-scrpage)             alias to `pageheadfoot' on input line 1106.
+) (/usr/share/texmf/tex/latex/tools/array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen161
+\ar@mcellbox=\box100
+\extrarowheight=\dimen162
+\NC@list=\toks19
+\extratabsurround=\skip67
+\backup@length=\skip68
+\ar@cellbox=\box101
+) (/usr/share/texmf/tex/latex/tools/longtable.sty
+Package: longtable 2023-11-01 v4.19 Multi-page Table package (DPC)
+\LTleft=\skip69
+\LTright=\skip70
+\LTpre=\skip71
+\LTpost=\skip72
+\LTchunksize=\count288
+\LTcapwidth=\dimen163
+\LT@head=\box102
+\LT@firsthead=\box103
+\LT@foot=\box104
+\LT@lastfoot=\box105
+\LT@gbox=\box106
+\LT@cols=\count289
+\LT@rows=\count290
+\c@LT@tables=\count291
+\c@LT@chunks=\count292
+\LT@p@ftn=\toks20
+)
+Class scrbook Info: longtable captions redefined on input line 51.
+ (/usr/share/texmf/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip73
+\multirow@cntb=\count293
+\multirow@dima=\skip74
+\bigstrutjot=\dimen164
+) (/usr/share/texmf/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texmf/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texmf/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (/usr/share/texmf/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 107.
+ (/usr/share/texmf/tex/latex/graphics-def/xetex.def
+File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen165
+\Gin@req@width=\dimen166
+) (/usr/share/texmf/tex/latex/ragged2e/ragged2e.sty
+Package: ragged2e 2023/06/22 v3.6 ragged2e Package
+\CenteringLeftskip=\skip75
+\RaggedLeftLeftskip=\skip76
+\RaggedRightLeftskip=\skip77
+\CenteringRightskip=\skip78
+\RaggedLeftRightskip=\skip79
+\RaggedRightRightskip=\skip80
+\CenteringParfillskip=\skip81
+\RaggedLeftParfillskip=\skip82
+\RaggedRightParfillskip=\skip83
+\JustifyingParfillskip=\skip84
+\CenteringParindent=\skip85
+\RaggedLeftParindent=\skip86
+\RaggedRightParindent=\skip87
+\JustifyingParindent=\skip88
+) (/usr/share/texmf/tex/latex/polyglossia/polyglossia.sty
+Package: polyglossia 2024/03/07 v2.1 Modern multilingual typesetting with XeLaTeX and LuaLaTeX
+ (/usr/share/texmf/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count294
+) (/usr/share/texmf/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+ (/usr/share/texmf/tex/generic/xkeyval/xkeyval.tex (/usr/share/texmf/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks21
+\XKV@tempa@toks=\toks22
+)
+\XKV@depth=\count295
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (/usr/share/texmf/tex/latex/polyglossia/gloss-latex.ldf
+File: gloss-latex.ldf polyglossia: module for default language
+)
+Package polyglossia Info: Default language is latex.
+) (/usr/share/texmf/tex/latex/polyglossia/gloss-german.ldf
+File: gloss-german.ldf polyglossia: module for German
+Package polyglossia Info: Option: German, spelling=new.
+Package polyglossia Info: Option: German, script=latin.
+Package polyglossia Info: Option: German, variant=german.
+Package polyglossia Info: Option: German, variant=german.
+Package polyglossia Info: Option: German, spelling=new.
+Package polyglossia Info: Option: German, script=latin.
+ (/usr/share/texmf/tex/latex/polyglossia/babelsh.def
+File: babelsh.def 2022/06/21 Babel common definitions for shorthands
+ Taken verbatim from babel files (2022/06/06 v3.76)
+)
+Package babel Info: Making " an active character on input line 194.
+)
+Package polyglossia Info: Default language is german.
+ (/usr/share/texmf/tex/latex/polyglossia/gloss-latin.ldf
+File: gloss-latin.ldf polyglossia: module for Latin
+\g_polyglossia_latin_question_exclamation_class=\XeTeXcharclass1
+\g_polyglossia_latin_colon_semicolon_class=\XeTeXcharclass2
+\g_polyglossia_latin_opening_guillemet_class=\XeTeXcharclass3
+\g_polyglossia_latin_closing_guillemet_class=\XeTeXcharclass4
+\g_polyglossia_latin_opening_bracket_class=\XeTeXcharclass5
+\g_polyglossia_latin_closing_bracket_class=\XeTeXcharclass6
+
+Package polyglossia Info: Activating Latin language variant "modern" on line
+(polyglossia)             605.
+
+
+Package polyglossia Info: Activating hyphenation patterns for modern Latin on
+(polyglossia)             line 605.
+
+Package babel Info: Making ' an active character on input line 618.
+Package babel Info: Making ^ an active character on input line 619.
+Package babel Info: Making = an active character on input line 620.
+)
+
+Package polyglossia Info: Activating Latin language variant "medieval" on line
+(polyglossia)             66.
+
+
+Package polyglossia Info: Activating Latin language variant "medieval" on line
+(polyglossia)             66.
+
+
+Package polyglossia Info: Activating Latin language variant "medieval" on line
+(polyglossia)             66.
+
+ (/usr/share/texmf/tex/latex/polyglossia/gloss-greek.ldf
+File: gloss-greek.ldf polyglossia: module for Greek
+ (/usr/share/texmf/tex/latex/polyglossia/xgreek-fixes.def)
+Package polyglossia Info: Option: Greek, variant=monotonic.
+Package polyglossia Info: Option: Greek, numerals=greek.
+\@attic@num=\count296
+)
+Package polyglossia Info: Option: Greek, variant=ancient.
+Package polyglossia Info: Option: Greek, variant=ancient.
+Package polyglossia Info: Option: Greek, variant=ancient.
+
+Package fontspec Info: Font family 'FreeSerif(0)' created for font 'FreeSerif'
+(fontspec)             with options [].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"FreeSerif/OT:script=latn;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->"FreeSerif/OT:script=latn;language=dflt;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"FreeSerif/B/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->"FreeSerif/B/OT:script=latn;language=dflt;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"FreeSerif/I/OT:script=latn;language=dflt;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"FreeSerif/BI/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+
+ (/usr/share/texmf/tex/latex/polyglossia/gloss-hebrew.ldf
+File: gloss-hebrew.ldf polyglossia: module for Hebrew
+ (/usr/share/texmf/tex/xelatex/bidi/bidi.sty
+Package: bidi 2023/08/02 v39.8 (Release Donald Ervin Knuth) Bidirectional typesetting in plain TeX and LaTeX
+
+****************************************************
+* 
+* bidi package (Bidirectional typesetting in
+* plain TeX and LaTeX, using XeTeX engine)
+* 
+* Description: A convenient interface for
+* typesetting bidirectional texts in plain TeX
+* and LaTeX. The package includes adaptations
+* for use with many other commonly-used packages.
+* 
+* Copyright (c) 2007--2023 Vafa Khalighi
+* Copyright (c) 2018--2020 bidi-tex GitHub organization
+* 
+* v39.8 (Release Donald Ervin Knuth), 2023/08/02
+* 
+* License: LaTeX Project Public License, version
+* 1.3c or higher (your choice)
+* 
+* Location on CTAN: /macros/xetex/latex/bidi
+* 
+* Issue tracker: https://github.com/kvafa/bidi/issues
+* 
+* Discussions: https://github.com/kvafa/bidi/discussions
+* 
+* Primary author of bidi package: Vafa Khalighi.
+* 
+****************************************************
+(/usr/share/texmf/tex/xelatex/bidi/biditools.sty
+Package: biditools 2022/06/15 v2.3 Programming tools for bidi package
+\@bidi@envbody=\toks23
+\@bidi@emptytoks=\toks24
+\bidi@poscount=\count297
+\bidi@tempcountb=\count298
+\bidi@temptoksa=\toks25
+\bidi@temptoksb=\toks26
+\bidi@dummies=\count299
+\bidi@are@these@correct=\toks27
+\bidi@toks@lista=\toks28
+\bidi@toks@listb=\toks29
+\bidi@stack@length=\count300
+\bidi@empty@stack=\toks30
+\bidi@looprepeat@depth=\count301
+) (/usr/share/texmf/tex/latex/zref/zref-abspage.sty
+Package: zref-abspage 2023-09-14 v2.35 Module abspage for zref (HO)
+ (/usr/share/texmf/tex/latex/zref/zref-base.sty
+Package: zref-base 2023-09-14 v2.35 Module base for zref (HO)
+ (/usr/share/texmf/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+) (/usr/share/texmf/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (/usr/share/texmf/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+) (/usr/share/texmf/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/usr/share/texmf/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+) (/usr/share/texmf/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+) (/usr/share/texmf/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+Package zref Info: New property list: main on input line 767.
+Package zref Info: New property: default on input line 768.
+Package zref Info: New property: page on input line 769.
+)
+\c@abspage=\count302
+Package zref Info: New property: abspage on input line 67.
+)
+\@bidi@copyins@=\insert252
+ (/usr/share/texmf/tex/xelatex/bidi/latex-xetex-bidi.def
+File: latex-xetex-bidi.def 2022/07/04 v1.4.9 bidi adaptations for `latex.ltx' for XeTeX engine
+\bidi@n@everypar=\toks31
+\bidi@column@check@number=\count303
+ (/usr/share/texmf/tex/xelatex/bidi/footnote-xetex-bidi.def
+File: footnote-xetex-bidi.def 2023/01/18 v1.2 bidi footnote macros for XeTeX engine
+\c@footdir@label=\count304
+\footdir@toks=\toks32
+) (/usr/share/texmf/tex/xelatex/bidi/tocbasic-xetex-bidi.def
+File: tocbasic-xetex-bidi.def 2022/06/15 v0.5 bidi adaptations for tocbasic package for XeTeX engine
+) (/usr/share/texmf/tex/xelatex/bidi/scrbook-xetex-bidi.def
+File: scrbook-xetex-bidi.def 2022/05/27 v1.3 bidi adaptations for scrbook class for XeTeX engine
+) (/usr/share/texmf/tex/xelatex/bidi/graphicx-xetex-bidi.def
+File: graphicx-xetex-bidi.def 2017/06/17 v0.5 bidi adaptations for graphicx package for XeTeX engine
+) (/usr/share/texmf/tex/xelatex/bidi/geometry-xetex-bidi.def
+File: geometry-xetex-bidi.def 2017/01/14 v0.2 bidi adaptations for geometry package for XeTeX engine
+) (/usr/share/texmf/tex/xelatex/bidi/longtable-xetex-bidi.def
+File: longtable-xetex-bidi.def 2022/05/20 v0.6 bidi adaptations for longtable package for XeTeX engine
+)
+Class scrbook Info: longtable captions redefined on input line 916.
+ (/usr/share/texmf/tex/xelatex/bidi/array-xetex-bidi.def
+File: array-xetex-bidi.def 2015/11/07 v0.3 bidi adaptations for array package for XeTeX engine
+) (/usr/share/texmf/tex/xelatex/bidi/multicol-xetex-bidi.def
+File: multicol-xetex-bidi.def 2022/07/10 v1.4 bidi adaptations for multicol package for XeTeX engine
+) (/usr/share/texmf/tex/xelatex/bidi/ragged2e-xetex-bidi.def
+File: ragged2e-xetex-bidi.def 2018/10/17 v0.3 bidi adaptations for ragged2e package for XeTeX engine
+)) (/usr/share/texmf/tex/xelatex/bidi/loadingorder-xetex-bidi.def
+File: loadingorder-xetex-bidi.def 2017/12/29 v0.97 making sure that bidi is the last package loaded
+)
+\bidi@digits=\count305
+\bidi@digits@charclass=\XeTeXcharclass7
+\bidi@sepmark@charclass=\XeTeXcharclass8
+) (/usr/share/texmf/tex/latex/polyglossia/hebrewcal.sty
+Package: hebrewcal 2022/07/18 v2.8 Hebrew calendar for polyglossia (adapted from hebcal.sty in Babel)
+ (/usr/share/texmf/tex/latex/polyglossia/cal-util.def
+\c@tmpA=\count306
+\c@tmpB=\count307
+\c@tmpC=\count308
+\c@tmpD=\count309
+\c@tmpE=\count310
+\c@tmpF=\count311
+)
+\hebrewday=\count312
+\hebrewmonth=\count313
+\hebrewyear=\count314
+\@common=\count315
+)
+Package polyglossia Info: Option: Hebrew, numerals=arabic.
+Package polyglossia Info: Option: Hebrew, numerals=arabic.
+Package polyglossia Info: Option: Hebrew, calendar=gregorian.
+ (/usr/share/texmf/tex/latex/polyglossia/babel-hebrewalph.def
+File: babel-hebrewalph.def 2023/06/01 Expandable definitions for Hebrew numerals
+)) (/usr/share/texmf/tex/latex/polyglossia/gloss-french.ldf
+File: gloss-french.ldf polyglossia: module for French
+\french@openbrackets=\XeTeXcharclass9
+\french@closebrackets=\XeTeXcharclass10
+\french@questionexclamation=\XeTeXcharclass11
+\french@punctthin=\XeTeXcharclass12
+\french@punctthick=\XeTeXcharclass13
+\french@punctguillstart=\XeTeXcharclass14
+\french@punctguillend=\XeTeXcharclass15
+Package polyglossia Info: Option: French, variant=french.
+) (/usr/share/texmf/tex/latex/reledmac/reledmac.sty
+Package: reledmac 2023/08/21 v2.39.7 typesetting critical editions
+ (/usr/share/texmf/tex/latex/xargs/xargs.sty
+Package: xargs 2008/03/22 v1.1  extended macro definitions  (mpg)
+\xargs@max=\count316
+\xargs@toksa=\toks33
+\xargs@toksb=\toks34
+) (/usr/share/texmf/tex/latex/bigfoot/suffix.sty
+Package: suffix 2006/07/15 1.5a Variant command support
+) (/usr/share/texmf/tex/generic/xstring/xstring.sty (/usr/share/texmf/tex/generic/xstring/xstring.tex
+\xs_counta=\count317
+\xs_countb=\count318
+)
+Package: xstring 2023/08/22 v1.86 String manipulations (CT)
+) (/usr/share/texmf/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+) (/usr/share/texmf/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+\@l@dtempcnta=\count319
+\@l@dtempcntb=\count320
+\l@dnumpstartsL=\count321
+\section@num=\count322
+\pausenumbering@page@num=\count323
+\led@toksa=\toks35
+\led@toksb=\toks36
+\line@margin=\count324
+\line@margin@columns=\count325
+\c@firstlinenum=\count326
+\c@linenumincrement=\count327
+\c@firstsublinenum=\count328
+\c@sublinenumincrement=\count329
+\lock@disp=\count330
+\sublock@disp=\count331
+\linenumsep=\skip89
+\line@num=\count332
+\subline@num=\count333
+\absline@num=\count334
+\@lock=\count335
+\sub@lock=\count336
+\page@num=\count337
+\endpage@num=\count338
+\endline@num=\count339
+\endsubline@num=\count340
+\this@section@page@num=\count341
+\@inputcheck=\read2
+\last@page@num=\count342
+\this@section@last@page@num=\count343
+\insert@count=\count344
+\linenum@out=\write3
+\@this@c@page=\count345
+\@edtext@level=\count346
+\c@edtext=\count347
+\edtext@notes=\count348
+\edtext@notes@start=\count349
+\raw@text=\box107
+\num@lines=\count350
+\one@line=\box108
+\par@line=\count351
+\pstarts@typeset@L=\count352
+\pstarts@read@L=\count353
+\c@pstart=\count354
+\ballast@count=\count355
+\c@ballast=\count356
+\@k=\count357
+\@h=\dimen167
+\printlines@count=\count358
+\old@hsize=\dimen168
+\footinsC=\insert251
+\mpfootinsC=\insert250
+\c@footnoteC=\count359
+\footnoteC@reading=\count360
+\footnoteC@series=\count361
+\prevpageC@num=\count362
+\prevpageC@numR=\count363
+\footnoteC@parafootsepX=\count364
+\footinsA=\insert249
+\mpfootinsA=\insert248
+\c@footnoteA=\count365
+\footnoteA@reading=\count366
+\footnoteA@series=\count367
+\prevpageA@num=\count368
+\prevpageA@numR=\count369
+\footnoteA@parafootsepX=\count370
+\footinsB=\insert247
+\mpfootinsB=\insert246
+\c@footnoteB=\count371
+\footnoteB@reading=\count372
+\footnoteB@series=\count373
+\prevpageB@num=\count374
+\prevpageB@numR=\count375
+\footnoteB@parafootsepX=\count376
+\c@par@page=\count377
+\c@line=\count378
+\c@subline=\count379
+\c@absline=\count380
+\sidenote@margin=\count381
+\l@dlp@rbox=\box109
+\l@drp@rbox=\box110
+\ledlsnotewidth=\dimen169
+\ledrsnotewidth=\dimen170
+\ledlsnotesep=\dimen171
+\ledrsnotesep=\dimen172
+
+
+! Package reledmac Error: Failed to patch the \endminipage command.
+
+See the reledmac package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7576   {\led@error@fail@patch@endminipage}
+                                            
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\c@labidx=\count382
+\c@pageline=\count383
+\@edindex@fornote@=\count384
+\stanza@count=\count385
+\stanzaindentbase=\skip90
+\c@stanzaindentsrepetition=\count386
+\c@startstanzaindentsrepetition=\count387
+\stanza@modulo=\count388
+\c@stanza=\count389
+\@emptytoks=\toks37
+\l@denvbody=\toks38
+\l@dampcount=\count390
+\l@dcolcount=\count391
+\hilfsbox=\box111
+\hilfsskip=\skip91
+\Hilfsbox=\box112
+\hilfscount=\count392
+\dcoli=\dimen173
+\dcolii=\dimen174
+\dcoliii=\dimen175
+\dcoliv=\dimen176
+\dcolv=\dimen177
+\dcolvi=\dimen178
+\dcolvii=\dimen179
+\dcolviii=\dimen180
+\dcolix=\dimen181
+\dcolx=\dimen182
+\dcolxi=\dimen183
+\dcolxii=\dimen184
+\dcolxiii=\dimen185
+\dcolxiv=\dimen186
+\dcolxv=\dimen187
+\dcolxvi=\dimen188
+\dcolxvii=\dimen189
+\dcolxviii=\dimen190
+\dcolxix=\dimen191
+\dcolxx=\dimen192
+\dcolxxi=\dimen193
+\dcolxxii=\dimen194
+\dcolxxiii=\dimen195
+\dcolxxiv=\dimen196
+\dcolxxv=\dimen197
+\dcolxxvi=\dimen198
+\dcolxxvii=\dimen199
+\dcolxxviii=\dimen256
+\dcolxxix=\dimen257
+\dcolxxx=\dimen258
+\dcolerr=\dimen259
+\edtabcolsep=\skip92
+\edfilldimen=\dimen260
+\c@addcolcount=\count393
+\HILFSskip=\skip93
+\Hilfsskip=\skip94
+\tabhilfbox=\box113
+\tabHilfbox=\box114
+\eled@sectioning@out=\write4
+) (/usr/share/texmf/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+) (/usr/share/texmf/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+\c@myPFN=\count394
+\c@myAFN=\count395
+\c@myBFN=\count396
+\c@myCFN=\count397
+\c@refStartLine=\count398
+ (/usr/share/texmf/tex/latex/microtype/microtype.sty
+Package: microtype 2023/03/13 v3.1a Micro-typographical refinements (RS)
+\MT@toks=\toks39
+\MT@tempbox=\box115
+\MT@count=\count399
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1059.
+LaTeX Info: Redefining \leftprotrusion on input line 1060.
+\MT@prot@toks=\toks40
+LaTeX Info: Redefining \rightprotrusion on input line 1078.
+LaTeX Info: Redefining \textls on input line 1368.
+\MT@outer@kern=\dimen261
+LaTeX Info: Redefining \textmicrotypecontext on input line 1988.
+\MT@listname@count=\count400
+ (/usr/share/texmf/tex/latex/microtype/microtype-xetex.def
+File: microtype-xetex.def 2023/03/13 v3.1a Definitions specific to xetex (RS)
+LaTeX Info: Redefining \lsstyle on input line 238.
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+ (/usr/share/texmf/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2023/03/13 v3.1a microtype main configuration file (RS)
+))
+\@habWidth=\skip95
+\@habWidth@temp=\skip96
+ (/usr/share/texmf/tex/latex/changepage/changepage.sty
+Package: changepage 2009/10/20 v1.0c check page and change page layout
+\c@cp@cntr=\count401
+\cp@tempcnt=\count402
+)
+\c@subHeadings=\count403
+\habItemLen=\skip97
+ (/usr/share/texmf/tex/latex/hanging/hanging.sty
+Package: hanging 2009/09/02 v1.2b hanging paragraphs and punctuation
+\h@ngcommawd=\skip98
+\h@ngfstopwd=\skip99
+\h@ngquotewd=\skip100
+\h@ngdquotewd=\skip101
+\h@ngquerywd=\skip102
+\h@ngexclwd=\skip103
+\h@ngcolonwd=\skip104
+\h@ngscolonwd=\skip105
+) (/usr/share/texmf/tex/latex/xifthen/xifthen.sty
+Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
+ (/usr/share/texmf/tex/latex/tools/calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count404
+\calc@Bcount=\count405
+\calc@Adimen=\dimen262
+\calc@Bdimen=\dimen263
+\calc@Askip=\skip106
+\calc@Bskip=\skip107
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count406
+\calc@Cskip=\skip108
+) (/usr/share/texmf/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+) (/usr/share/texmf/tex/latex/ifmtarg/ifmtarg.sty
+Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
+))
+\c@myStartpage=\count407
+\c@myEndpage=\count408
+ (/usr/share/texmf/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+) (/usr/share/texmf/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip109
+\enit@outerparindent=\dimen264
+\enit@toks=\toks41
+\enit@inbox=\box116
+\enit@count@id=\count409
+\enitdp@description=\count410
+) (./kerning.tex
+\charHalbgeviert=\XeTeXcharclass16
+\charNummerEins=\XeTeXcharclass17
+\charNummerZwei=\XeTeXcharclass18
+\charNummerDrei=\XeTeXcharclass19
+\charNummerVier=\XeTeXcharclass20
+\charNummerFünf=\XeTeXcharclass21
+\charNummerSechs=\XeTeXcharclass22
+\charNummerSieben=\XeTeXcharclass23
+\charNummerAcht=\XeTeXcharclass24
+\charNummerNeun=\XeTeXcharclass25
+\charNummerNull=\XeTeXcharclass26
+\charKomma=\XeTeXcharclass27
+\charGui=\XeTeXcharclass28
+\charPunkt=\XeTeXcharclass29
+\charSlash=\XeTeXcharclass30
+\charParens=\XeTeXcharclass31
+\charDivis=\XeTeXcharclass32
+\charKzg=\XeTeXcharclass33
+\charColon=\XeTeXcharclass34
+\chara=\XeTeXcharclass35
+\charb=\XeTeXcharclass36
+\charc=\XeTeXcharclass37
+\chard=\XeTeXcharclass38
+\chare=\XeTeXcharclass39
+\charf=\XeTeXcharclass40
+\charg=\XeTeXcharclass41
+\charh=\XeTeXcharclass42
+\chari=\XeTeXcharclass43
+\chark=\XeTeXcharclass44
+\charl=\XeTeXcharclass45
+\charm=\XeTeXcharclass46
+\charn=\XeTeXcharclass47
+\charo=\XeTeXcharclass48
+\charp=\XeTeXcharclass49
+\charq=\XeTeXcharclass50
+\charr=\XeTeXcharclass51
+\chars=\XeTeXcharclass52
+\chart=\XeTeXcharclass53
+\charu=\XeTeXcharclass54
+\charv=\XeTeXcharclass55
+\charw=\XeTeXcharclass56
+\charx=\XeTeXcharclass57
+\chary=\XeTeXcharclass58
+\charz=\XeTeXcharclass59
+\charA=\XeTeXcharclass60
+\charB=\XeTeXcharclass61
+\charC=\XeTeXcharclass62
+\charD=\XeTeXcharclass63
+\charE=\XeTeXcharclass64
+\charF=\XeTeXcharclass65
+\charG=\XeTeXcharclass66
+\charH=\XeTeXcharclass67
+\charI=\XeTeXcharclass68
+\charJ=\XeTeXcharclass69
+\charK=\XeTeXcharclass70
+\charL=\XeTeXcharclass71
+\charM=\XeTeXcharclass72
+\charN=\XeTeXcharclass73
+\charO=\XeTeXcharclass74
+\charP=\XeTeXcharclass75
+\charQ=\XeTeXcharclass76
+\charR=\XeTeXcharclass77
+\charS=\XeTeXcharclass78
+\charT=\XeTeXcharclass79
+\charV=\XeTeXcharclass80
+\charW=\XeTeXcharclass81
+\charX=\XeTeXcharclass82
+\charZ=\XeTeXcharclass83
+
+
+Package microtype Warning: protrusion inheritance list `druck.tex/501(protrusion)' will
+(microtype)                override list `microtype.cfg/411(protrusion)' for 
+(microtype)                font `TU////' on input line 501.
+
+
+Package microtype Warning: expansion inheritance list `druck.tex/501(expansion)' will
+(microtype)                override list `microtype.cfg/411(expansion)' for 
+(microtype)                font `TU////' on input line 501.
+
+
+Package microtype Warning: interword spacing inheritance list `druck.tex/501(spacing)' will
+(microtype)                override list `microtype.cfg/411(spacing)' for 
+(microtype)                font `TU////' on input line 501.
+
+
+Package microtype Warning: kerning inheritance list `druck.tex/501(kerning)' will
+(microtype)                override list `microtype.cfg/411(kerning)' for 
+(microtype)                font `TU////' on input line 501.
+
+)
+\l@medievallatin = a dialect from \language\l@latin 
+
+No file druck.aux.
+\openout1 = `druck.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 548.
+LaTeX Font Info:    ... okay on input line 548.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 548.
+LaTeX Font Info:    ... okay on input line 548.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 548.
+LaTeX Font Info:    ... okay on input line 548.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 548.
+LaTeX Font Info:    ... okay on input line 548.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 548.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 548.
+(/usr/share/texmf/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 548.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 548.
+LaTeX Font Info:    ... okay on input line 548.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 548.
+LaTeX Font Info:    ... okay on input line 548.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 548.
+LaTeX Font Info:    ... okay on input line 548.
+Package scrbase Info: activating german \partname on input line 548.
+Package scrbase Info: activating german \chaptername on input line 548.
+Package scrbase Info: activating german \appendixname on input line 548.
+Package scrbase Info: activating german \figurename on input line 548.
+Package scrbase Info: activating german \tablename on input line 548.
+Package scrbase Info: activating german \contentsname on input line 548.
+Package scrbase Info: activating german \listfigurename on input line 548.
+Package scrbase Info: activating german \listtablename on input line 548.
+Package scrbase Info: activating german \bibname on input line 548.
+Package scrbase Info: activating german \indexname on input line 548.
+
+Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 548.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 548.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 548.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 548.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 548.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 548.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 548.
+LaTeX Font Info:    Redeclaring math accent \check on input line 548.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 548.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 548.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 548.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 548.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 548.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 548.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 548.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 548.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 548.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 548.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 548.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 548.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 548.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 548.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 548.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 548.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 548.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 548.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/Junicode(0)/m/n on input line 548.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 548.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/Junicode(0)/m/n on input line 548.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/Junicode(0)/m/n --> TU/Junicode(0)/m/n on input line 548.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/Junicode(0)/m/it on input line 548.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/Junicode(0)/b/n on input line 548.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 548.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 548.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/Junicode(0)/m/n --> TU/Junicode(0)/b/n on input line 548.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/Junicode(0)/b/it on input line 548.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 548.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 548.
+
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.13188pt, 320.0935pt, 64.01869pt)
+* v-part:(T,H,B)=(64.01869pt, 516.41753pt, 85.35826pt)
+* \paperwidth=455.24408pt
+* \paperheight=665.79448pt
+* \textwidth=320.0935pt
+* \textheight=516.41753pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-8.2513pt
+* \topmargin=-30.36447pt
+* \headheight=15.0pt
+* \headsep=7.11317pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=63.16512pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package microtype Info: Patching ((r)e)ledmac to enable character protrusion.
+LaTeX Info: Redefining \microtypecontext on input line 548.
+Package microtype Info: Applying patch `item' on input line 548.
+Package microtype Info: Applying patch `toc' on input line 548.
+Package microtype Info: Applying patch `eqnum' on input line 548.
+
+Package microtype Warning: Unable to apply patch `footnote' on input line 548.
+
+Package microtype Info: Applying patch `verbatim' on input line 548.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+LaTeX Info: Redefining \rmfamily on input line 548.
+LaTeX Info: Redefining \sffamily on input line 548.
+LaTeX Info: Redefining \ttfamily on input line 548.
+[1
+
+
+
+
+
+] [2
+
+] [3
+
+] [4
+
+]
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmss' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `TU/Junicode(0)/bx/n' in size <10> not available
+(Font)              Font shape `TU/Junicode(0)/b/n' tried instead on input line 606.
+Package tocbasic Info: character protrusion at toc deactivated on input line 606.
+
+No file druck.toc.
+\tf@toc=\write5
+\openout5 = `druck.toc'.
+
+LaTeX Font Info:    Font shape `TU/Junicode(0)/m/sl' in size <10> not available
+(Font)              Font shape `TU/Junicode(0)/m/it' tried instead on input line 608.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 608.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 608.
+(/usr/share/texmf/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+) [5
+
+] [6
+
+
+] [1
+
+
+
+
+
+] [2
+
+
+] [3
+
+
+] (./druck.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 18740 strings out of 475925
+ 436577 string characters out of 5783280
+ 1927839 words of memory out of 5000000
+ 40536 multiletter control sequences out of 15000+600000
+ 558341 words of font info for 70 fonts, out of 8000000 for 9000
+ 477 hyphenation exceptions out of 8191
+ 108i,19n,107p,10937b,684s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on druck.pdf (9 pages).
