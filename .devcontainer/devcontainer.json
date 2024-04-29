@@ -5,7 +5,7 @@
   "runServices": ["vscode"],
   "shutdownAction": "stopCompose",
   "workspaceFolder": "/workspace",
-  "postCreateCommand": "apt-get update && apt-get install -y fontconfig fonts-junicode fonts-freefont-otf && tlmgr update --self && tlmgr install xetex koma-script fontspec setspace multirow ragged2e polyglossia bidi zref reledmac xargs xstring bigfoot microtype changepage hanging xifthen ifmtarg enumitem hyphen-german hyphen-latin hyphen-greek hyphen-french && texhash",
+  "postCreateCommand": "apt-get update && apt-get install -y fontconfig fonts-junicode fonts-freefont-otf && tlmgr update --self && tlmgr update --all && tlmgr install xetex koma-script fontspec setspace multirow ragged2e polyglossia bidi zref reledmac xargs xstring bigfoot microtype changepage hanging xifthen ifmtarg enumitem hyphen-german hyphen-latin hyphen-greek hyphen-french junicode && texhash",
   "customizations": {
     "vscode": {
         "extensions": [
@@ -36,6 +36,62 @@
                 "%DIR%/",
                 "%TMPFILE%",
                 "-y=\"defaultIndent: '%INDENT%',onlyOneBackUp: 1\""
+            ],
+            "latex-workshop.latex.recipe.default": "XeLaTeX",
+            "latex-workshop.latex.recipes": [
+                {
+                    "name": "latexmk (xelatex)",
+                    "tools": [
+                        "xelatexmk"
+                    ]
+                },
+                {
+                    "name": "XeLaTeX",
+                    "tools": [
+                        "xelatex"
+                    ]
+                },
+                {
+                    "name": "XeLaTeX + xindy",
+                    "tools": [
+                        "xelatex",
+                        "xindy"
+                    ]
+                }
+            ],
+            "latex-workshop.latex.tools": [
+                {
+                    "name": "xelatexmk",
+                    "command": "latexmk",
+                    "args": [
+                        "-synctex=1",
+                        "-interaction=nonstopmode",
+                        "-file-line-error",
+                        "-xelatex",
+                        "-outdir=%OUTDIR%",
+                        "%DOC%"
+                    ],
+                    "env": {}
+                },
+                {
+                    "name": "xelatex",
+                    "command": "xelatex",
+                    "args": [
+                        "--synctex=1",
+                        "--interaction=nonstopmode",
+                        "%DOCFILE%"
+                    ],
+                    "env": {}
+                }, {
+                    "name": "xindy",
+                    "command": "bash",
+                    "args": [
+                        "%DIR%/index.sh"
+                    ],
+                    /*"command": "makeindex",
+                    "args": [ "%DOCFILE%-top.idx", "%DOCFILE%-per.idx" ],*/
+                    "env": {}
+                }
             ],
             "dev.containers.copyGitConfig": true
         }
