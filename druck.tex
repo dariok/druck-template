@@ -334,32 +334,11 @@
 \ExplSyntaxOff
 
 \makeatletter
-	% \newcounter{mySelfRef}%
-	% \newcounter{myChap}%
-	% \setcounter{mySelfRef}{1}
 	\newcommand{\noteref}[2][0]{%
 	% prüfen, ob das label überhaupt schon definiert ist, sonst gibt es Probleme; 2016-12-14 DK
 	% ggf. die Seite nicht mit ausgeben. 2017-02-23 DK %
 	\@ifundefined{r@#2}{000}{%
-			% % \label{e\themyChap noteref\themySelfRef}%
-			% \ifthenelse{\equal{\pageref{#2}}{\thepage}}
-			% %\Ifstr{\pageref{#2}}{\pageref{e\themyChap noteref\themySelfRef}}%
-			% 	% Fußnote auf der gleichen Seite: Seitenzahl nicht ausgeben
-			% 	{\ifnum#1=2%
-			% 		{\ref{#2}}%
-			% 		\else{%
-			% 			Anm.~\ref{#2}%
-			% 		}%
-			% 	\fi}%
-			% 	% verschiedene Seitenzahlen
-			% 	{\ifnum#1=1% Paramter = 1 gesetzt, also Seite unterdrücken
 					{Anm.~\ref{#2}}%
-			% 	\else\ifnum#1=2%
-			% 		{\ref{#2}}%
-			% 	\else%
-			% 		{S. \pageref{#2} Anm.~\ref{#2}}%
-			% 	\fi\fi}%
-			% %\stepcounter{mySelfRef}%
 		}%
 	}
 	
@@ -483,14 +462,6 @@
       \setcounter{myStartpage}{\romantoarabic{\getpagerefnumber{#1}}}%
       \setcounter{myEndpage}{\romantoarabic{\getpagerefnumber{#1e}}}%
     }%
-		% Ansatz mit \ifcase?
-    % \ifnum\value{myStartpage}=\value{myEndpage}%
-    %   S.~\getpagerefnumber{#1}%
-		% \else\ifnum\value{myStartpage}+1=\value{myEndpage}%
-    %   S.~\getpagerefnumber{#1}\kern0.2ex f\peek_meaning:NTF . {\relax}{.}%
-    % \else%
-    %   S.~\getpagerefnumber{#1}–\getpagerefnumber{#1e}%
-    % \fi\fi%
     \ifthenelse{\value{myStartpage}<\value{myEndpage}}{%
       \ifthenelse{\intcalcAdd{\value{myStartpage}}{1}=\value{myEndpage}}{%
         S.~\getpagerefnumber{#1}\kern0.2ex f\peek_meaning:NTF . {\relax}{.}%
@@ -514,37 +485,6 @@
 
 \input{kerning}
 
-\begin{hyphenrules}{latin}
-	\hyphenation{cae-le-stis}
-	\hyphenation{cir-cum-iacen-ti-bus}
-	\hyphenation{co-ales-ca-mus}
-	\hyphenation{cres-cunt}
-	\hyphenation{dis-pu-ta-tio dis-pu-ta-tio-nis dis-pu-ta-tio-ne dis-pu-ta-tae}
-	\hyphenation{dis-ci-pli-na dis-ci-pli-nae dis-ci-pli-nam}
-	\hyphenation{eius-mo-di}
-	\hyphenation{mo-nue-runt}
-	\hyphenation{neg-li-gas}
-	% \hyphenation{no-stri}
-	\hyphenation{Phil-ippum Phil-ippo}
-	\hyphenation{Prae-ter-ea}
-	% \hyphenation{ve-stri ve-strae}
-	\hyphenation{vo-lue-ro}
-	% dt. Wörter, die oft in FN vorkommen; da wegen der XeTeXinterchartoks nicht mit textGerman gearbeitet werden kann,
-	% müssen diese Fälle explizit auch für lat. Fußnoten gesetzt werden.
-	\hyphenation{nicht doch auch}
-	\hyphenation{Kon-kor-dien-buch Kon-kor-dien-for-mel}
-\end{hyphenrules}
-
-\begin{hyphenrules}{german}
-	\hyphenation{Epi-sto-la-rum}
-	\hyphenation{her-nacher}
-	\hyphenation{Me-lan-chthon}
-	\hyphenation{vor-gli-chen}
-\end{hyphenrules}
-
-% \includeonly{includes/6.tex}
-% \includeonly{includes/51.tex,includes/58.tex}%,includes/3.tex,includes/4.tex,includes/5.tex}
-
 \begin{document}
 \frontmatter
 %
@@ -553,207 +493,34 @@
 %Schmutztitelblatt
 \vspace*{\fill}
 \begin{center}Schmutztitel\end{center}
-%\begin{center}Theologenbriefwechsel im Südwesten des Reichs in der Frühen Neuzeit\\%
-%	\vspace{\baselineskip}Kurpfalz Ⅰ (1556–1583)\end{center}\vfill
+
 %Vortitel
 \clearpage\thispagestyle{empty}
 \begin{center}{\LARGE Vortitel}\end{center}
-%	\begin{center}{\LARGE Quellen und Forschungen\\\vspace{0.25\baselineskip}zur Reformationsgeschichte}\\
-%	\vspace{1.5\baselineskip}Im Auf\kern.1pttrag des Vereins für Reformationsgeschichte\\
-%		\vspace{0.25\baselineskip}herausgegeben von Irene Dingel\\
-%		\vspace{1.25\baselineskip}Band 99\\
-%	\vspace{10\baselineskip}{\LARGE Theologenbriefwechsel im Südwesten des\\
-%		\vspace{0.25\baselineskip}Reichs in der Frühen Neuzeit (1550–1620)\\
-%		\vspace*{0.5\baselineskip}Kritische Auswahledition}\\
-%	\vspace{2\baselineskip}Im Auf\kern.1pttrag der\\
-%		\vspace{0.25\baselineskip}Heidelberger Akademie der Wissenschaften\\
-%		\vspace{0.25\baselineskip}herausgegeben von Christoph Strohm\\
-%	\vspace{2\baselineskip}Band 2\end{center}%
+
 %Haupttitel
 \clearpage\thispagestyle{empty}\begin{center}\vspace*{3\baselineskip}
 \textbf{\LARGE Haupttitel}
-%	\textbf{\LARGE Theologenbriefwechsel im Südwesten des\\
-%		\vspace{0.25\baselineskip}Reichs in der Frühen Neuzeit (1550–1620)\\
-%		\vspace{.25\baselineskip}Kritische Auswahledition\\
-%		\vspace{2\baselineskip}Band 2:\\\vspace{0.5\baselineskip}Kurpfalz Ⅰ (1556–1583)}\\
-%		\vspace{4\baselineskip}{\large Im Auf\kern.1pttrag der\\
-%		\vspace{0.25\baselineskip}Heidelberger Akademie der Wissenschaften\\
-%		\vspace{0.25\baselineskip}herausgegeben von Christoph Strohm\\
-%	\vspace{2\baselineskip}Bearbeitet von Stefan Aderhold, Sabine Arend, Marcel Böhme,\\
-%	\vspace{0.25\baselineskip} Stephen E. Buckwalter, Daniel Degen, Gerald Dörner,\\
-%	\vspace{.5\baselineskip} Max Graff, Judith Steiniger und Thomas Wilhelmi}
-%	\par\vfill
-%	Gütersloher Verlagshaus\\2022
+
 \end{center}
 %Titelverso
 \clearpage\thispagestyle{empty}
 \noindent Titelverso
-%  \noindent Dieser Band wurde im Rahmen der gemeinsamen Forschungsförderung von Bund und Ländern im Akademienprogramm 
-%	  mit Mitteln des Bundesministeriums für Bildung und Forschung und des Ministeriums für Wissenschaft, Forschung und 
-%		Kunst des Landes Baden-Württemberg erarbeitet.
-%	\par\noindent \includegraphics[width=0.48\textwidth]{includes/au2.png}\hspace{0.02\textwidth}
-%		\includegraphics[width=0.48\textwidth]{includes/hd.png}
+
 \vspace{25\baselineskip}
-%\flexitem[8]{Satz:}{Baumgarten, Kampkaspar, Steyer GbR}
-%\flexitem[8]{}{Richterstr. 19}
-%\flexitem[8]{}{38106 Braunschweig}
-%\flexitem[8]{}{https://baukast.digital}
+
 \vfill
 \noindent ISBN 978-3-123-45678-9
-%\noindent ISBN 978-3-579-05982-2
-%
+
 \setcounter{page}{4}
 \tableofcontents
 
 \frontmatter
-%\setcounter{page}{13}
-%\include{includes/Vorwort.tex}
-%\include{includes/Konkordanzliste.tex}
-%\include{includes/Abkürzungsverzeichnis.tex}
-%\include{includes/Literaturverzeichnis.tex}
-%\include{includes/Verzeichnis.tex}
-%\include{includes/Editorische.tex}
-\cleardoublepage
-%\include{includes/Einleitung.tex}
-
 
 \mainmatter
-\part*{Edition}\cleardoublepage
-% \include{includes/1}
-% \include{includes/2}
-% \include{includes/3}
-% \include{includes/4}
-% \include{includes/5}
-% \include{includes/6}
-% \include{includes/7}
-% \include{includes/8}
-% \include{includes/9}
-% \include{includes/10}
-% \include{includes/11}
-% \include{includes/12}
-% \include{includes/13}
-% \include{includes/14}
-% \include{includes/15}
-% \include{includes/16}
-% \include{includes/17}
-% \include{includes/18}
-% \include{includes/19}
-% \include{includes/20}
-% \include{includes/21}
-% \include{includes/22}
-% \include{includes/23}
-% \include{includes/24}
-% \include{includes/25}
-% \include{includes/26}
-% \include{includes/27}
-% \include{includes/28}
-% \include{includes/29}
-% \include{includes/30}
-% \include{includes/31}
-% \include{includes/32}
-% \include{includes/33}
-% \include{includes/34}
-% \include{includes/35}
-% \include{includes/36}
-% \include{includes/37}
-% \include{includes/38}
-% \include{includes/39}
-% \include{includes/40}
-% \include{includes/41}
-% \include{includes/42}
-% \include{includes/43}
-% \include{includes/44}
-% \include{includes/45}
-% \include{includes/46}
-% \include{includes/47}
-% \include{includes/48}
-% \include{includes/49}
-% \include{includes/50}
-% \include{includes/51}
-% \include{includes/52}
-% \include{includes/53}
-% \include{includes/54}
-% \include{includes/55}
-% \include{includes/56}
-% \include{includes/57}
-% \include{includes/58}
-% \include{includes/59}
-% \include{includes/60}
-% \include{includes/61}
-% \include{includes/62}
-% \include{includes/63}
-% \include{includes/64}
-% \include{includes/65}
-% \include{includes/66}
-% \include{includes/67}
-% \include{includes/68}
-% \include{includes/69}
-% \include{includes/70}
-% \include{includes/71}
-% \include{includes/72}
-% \include{includes/73}
-% \include{includes/74}
-% \include{includes/75}
-% \include{includes/76}
-% \include{includes/77}
-% \include{includes/78}
-% \include{includes/79}
-% \include{includes/80}
-% \include{includes/81}
-% \include{includes/82}
-% \include{includes/83}
-% \include{includes/84}
-% \include{includes/85}
-% \include{includes/86}
-% \include{includes/87}
-% \include{includes/88}
-% \include{includes/89}
-% \include{includes/90}
-% \include{includes/91}
-% \include{includes/92}
-% \include{includes/93}
-% \include{includes/94}
-% \include{includes/95}
-% \include{includes/96}
-% \include{includes/97}
-% \include{includes/98}
-% \include{includes/99}
-% \include{includes/100}
-% \include{includes/101}
-% \include{includes/102}
-% \include{includes/103}
-% \include{includes/104}
-% \include{includes/105}
-% \include{includes/106}
-% \include{includes/107}
-% \include{includes/108}
-% \include{includes/109}
-% \include{includes/110}
-% \include{includes/111}
-% \include{includes/112}
-% \include{includes/113}
-% \include{includes/114}
-% \include{includes/115}
-% \include{includes/116}
-% \include{includes/117}
-% \include{includes/118}
-% \include{includes/119}
-% \include{includes/120}
-% \include{includes/121}
-% \include{includes/122}
-% \include{includes/123}
-% \include{includes/124}
-% \include{includes/125}
-% \include{includes/126}
-% \include{includes/127}
-% \include{includes/128}
+
 
 \backmatter
 \part*{Verzeichnisse}
-% \include{includes/01 Bibelstellenregister.tex}
-% \include{includes/02 Zitatenregister.tex}
-% \include{includes/03 Personenregister.tex}
-% \include{includes/04 Ortsregister.tex}
-% \include{includes/05 Sachregister.tex}
-% \printindex*
+
 \end{document}
